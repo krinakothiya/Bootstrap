@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offset of Class Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <style>
+        .container {
+            border: 4px solid black;
+        }
+
+        .box1 {
+            min-height: 250px;
+            background-color: #dec92e;
+        }
+
+
+        .box2 {
+            min-height: 250px;
+            background-color: rgb(241, 114, 68);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-3 box1">Column 1</div> <!-- it is a space of 3-col to the life side -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-8 box1">Column 1</div> <!-- it is a space of 8-col to the life side -->
+            <div class="col-4 offset-5 box2">Column 2</div> <!-- heare 4+8=12, then second is peint in new line-->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 offset-sm-8 col-md-4 offset-md-6 col-lg-4 offset-lg-4 box1">box1</div>
+            <!--This column has different behavior based on three screen size breakpoints: small (sm), medium (md), and large (lg)-->
+        </div>
+    </div>
+
+</body>
+
+</html>

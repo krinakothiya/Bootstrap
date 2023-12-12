@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border And Shadow Class</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            border: 4px solid green;
+            height: 3444px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-12 p-3 text-center">
+                <h2 class="text-danger">Border And Shadow Class</h2>
+            </div>
+
+
+            <!-- border and border-colour and border width -->
+            <div class="box border border-danger border-1 ">1</div>
+            <div class="box border-top border-danger border-2 ">2</div>
+            <div class="box border-bottom border-danger border-3 ">3</div>
+            <div class="box border-end border-danger border-4  ">4</div>
+            <div class="box border-start border-danger border-5">5</div>
+
+            <!-- remove border -->
+            <div class="border border-bottom-0 m-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <!-- border Radius -->
+            <div class="box border border-danger rounded ">1</div>
+            <div class="box border border-danger rounded-top">2</div>
+            <div class="box border border-danger rounded-bottom">3</div>
+            <div class="box border border-danger rounded-end">4</div>
+            <div class="box border border-danger rounded-start">5</div>
+            <div class="box border border-danger rounded-circle">6</div>
+
+            <!-- radius size -->
+            <div class="mt-4">
+                <div class="box border border-danger rounded-0 ">1</div>
+                <div class="box border border-danger rounded-1">2</div>
+                <div class="box border border-danger rounded-2">3</div>
+                <div class="box border border-danger rounded-3">4</div>
+                <div class="box border border-danger rounded-4">5</div>
+                <div class="box border border-danger rounded-5">6</div>
+            </div>
+
+            <!-- Shadow class -->
+            <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+            <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+            <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+            <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+        </div>
+    </div>
+</body>
+
+</html>
